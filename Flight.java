@@ -10,7 +10,7 @@ public class Flight implements Command{
 	
 	public void land() {
 		if(trafficController.isAvaailable()) {
-			System.out.println("Flight" + name + " has landed"); 
+			System.out.println("Flight " + name + " has landed"); 
 			trafficController.setAvailablity(false);
 		} else {
 			System.out.println("Flight " + name + " is waiting for runway to clear"); 
